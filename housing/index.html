@@ -31,14 +31,14 @@
 
         <script>
             // Housing data from CSV
-            const housingData = {};
+            const housingData = {
+                11: "Fenchurch",
+                16: "Henna",
+            };
 
             // House plot positions loaded from external JSON file
             let plotPositions = [];
-            let mapImageData = {
-                11: "Henna",
-                16: "Fenchurch",
-            };
+            let mapImageData = {};
 
             async function loadPlotPositions() {
                 try {
